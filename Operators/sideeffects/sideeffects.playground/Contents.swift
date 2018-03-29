@@ -13,7 +13,7 @@ observableOne
         return value.contains("1")
     }
     .do(onNext: { value in
-        print("*SIDE_EFFECT Este é o proximo item \(value)")
+        print("*SIDE_EFFECT Este é o proximo item: \(value)")
     }, onError: { error in
         print("*SIDE_EFFECT Este é o erro \(error)")
     }, onCompleted: {
